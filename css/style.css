@@ -3,7 +3,7 @@ html {
     
 }
 #particles-js {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -18,9 +18,52 @@ body {
   }
 
   section {
-    min-height: 75vh;
+    min-height: 100vh;
 }
- 
+ .flex{
+  flex-wrap: wrap;
+ }
+
+ @media (max-width: 768px) {
+  header .flex {
+      flex-wrap: wrap;
+  }
+}
+/* Para las tarjetas en la sección de servicios */
+.grid .flex {
+  align-items: center; /* Asegura que los iconos y textos estén alineados */
+  justify-content: flex-start; /* Mantiene los iconos y textos juntos */
+  flex-wrap: nowrap; /* Evita que se dividan los elementos */
+  gap: 16px; /* Espacio entre iconos y textos */
+}
+
+.grid .flex i {
+  flex-shrink: 0; /* Evita que los iconos cambien de tamaño */
+}
+
+.grid .flex div {
+  flex-grow: 1; /* Asegura que el texto tome el espacio restante */
+}
+@media (max-width: 768px) {
+  /* Reducir el tamaño de los iconos y ajustar texto */
+  .grid .flex i {
+      font-size: 40px; /* Iconos más pequeños */
+  }
+
+  .grid .flex h3 {
+      font-size: 18px; /* Texto del título más pequeño */
+  }
+
+  .grid .flex p {
+      font-size: 14px; /* Texto descriptivo más pequeño */
+  }
+
+  /* Ajustar márgenes en secciones móviles */
+  section {
+      margin-bottom: 60px; /* Menor espacio entre secciones */
+  }
+}
+
 
   .bg-gradient-to-b {
     background: linear-gradient(to bottom, #401acd 0%, #351465 10%, #5f0934 30%,#351465 40%,#13265a 60%, #351465 80%, #943765 90%, #1a3378 100%);
@@ -55,16 +98,29 @@ body {
     transform: translateX(0);
 }
 
-/* Menú Hamburguesa */
+
+header {
+  position: relative;
+  z-index: 1000;
+}
 #menu-toggle {
-    display: block;
-    cursor: pointer;
-    padding: 16px;
-    z-index: 10000; /* Asegura que el botón esté por encima del contenido */
+  display: flex; /* Asegura que los elementos estén alineados en fila */
+    flex-direction: column; /* Apila las líneas del menú hamburguesa */
+    gap: 5px;
+    z-index: 10000; /* Asegura que esté encima del contenido */
 }
 
+@media (min-width: 768px) {
+  #menu-toggle {
+    position: absolute; /* Asegura que esté fuera del flujo */
+    top: -1000px; /* Lo mueve completamente fuera del área visible */
+    left: -1000px; /* Lo mueve fuera del viewport */
+    visibility: hidden; /* Lo oculta completamente */
+  }
+}
+
+
 #menu-toggle span {
-    display: block;
     width: 35px;
     height: 5px;
     margin: 6px 0;
@@ -135,6 +191,15 @@ header {
     position: relative;
     height: 200px;
     background: rgba(0, 0, 0, 0.4); /* Semi-transparente para que las partículas se vean */
+}
+
+#value {
+  padding-bottom: 50px; /* Espacio interno específico para la sección 'Values' */
+}
+
+#contact {
+  margin-top: 100px; /* Espacio adicional antes de la sección 'Contact' */
+  padding-top: 50px;
 }
 
 /* Contenedor de las partículas */
