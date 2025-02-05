@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+    
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Poner las partículas por detrás del contenido */
+}
+
+body {
+    background: radial-gradient(circle at center, rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
+    font-family: 'Oswald', sans-serif;
+    
+  }
+
+  section {
+    min-height: 75vh;
+}
+ 
+
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #401acd 0%, #351465 10%, #5f0934 30%,#351465 40%,#13265a 60%, #351465 80%, #943765 90%, #1a3378 100%);
+  }
+  
+  /* Estilo de los puntos brillantes y líneas */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .bg-shimmer {
+    background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.2) 20px);
+    animation: shimmer 3s linear infinite;
+  }
+
+ /* Menú Lateral */
+#side-menu {
+    /* Inicialmente oculto fuera de la pantalla */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999; /* Establece un z-index alto para que el menú se muestre encima de otros elementos */
+}
+
+/* Menú lateral abierto */
+#side-menu.open {
+    /* Mostrar el menú cuando se añade la clase 'open' */
+    transform: translateX(0);
+}
+
+/* Menú Hamburguesa */
+#menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 16px;
+    z-index: 10000; /* Asegura que el botón esté por encima del contenido */
+}
+
+#menu-toggle span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #fff;
+}
+
+
+  /* Estilos personalizados para subrayado animado */
+@keyframes underline-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .menu-item {
+    position: relative;
+    text-decoration: none; /* Elimina subrayado predeterminado */
+    color: white; /* Color de texto inicial */
+    transition: color 0.3s ease; /* Animación para color */
+  }
+  
+  /* Estilos en hover */
+  .menu-item:hover {
+    color: #FFA500; /* Naranja en hover */
+  }
+  
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFA500; /* Naranja en subrayado */
+    transition: width 0.3s ease; /* Animación para el subrayado */
+  }
+  
+  /* Subrayado en hover */
+  .menu-item:hover::after {
+    width: 100%; /* Se expande el subrayado al 100% en hover */
+  }
+  
+  /* Boton de siguiente  */
+  .fixed {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #FFA500; /* Naranja más brillante al hacer hover */
+  }
+
+
+  /* Fondo del header */
+header {
+    position: relative;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparente para que las partículas se vean */
+}
+
+/* Contenedor de las partículas */
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Estilo de las partículas */
+.particle {
+    position: absolute;
+    width: 1px; /* Lineas finas */
+    background-color: rgba(255, 255, 255, 0.6); /* Color de la línea */
+    height: 60px; /* Longitud de la línea */
+    transform-origin: center; /* Se moverán alrededor de un punto central */
+    animation: rotateParticle 5s linear infinite; /* Rotación continua */
+}
+
+/* Animación de las partículas para rotar alrededor del centro */
+@keyframes rotateParticle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

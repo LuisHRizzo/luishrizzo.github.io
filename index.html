@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Infinito</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-b from-[#401acd] from-10% via-[#351465] via-50% to-[#13265a] to-90% ">
+    <div id="particles-js"></div>
+
+    <header class="transition-all w-full h-auto bg-transparent mt-6">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- Columna del logo -->
+                <div class="w-2/3 md:w-1/4 lg:w-1/3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="src/images/logo.png" class="transition-all" alt="Cryptcon">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Menú Hamburguesa (solo en móviles) -->
+                <div class="md:hidden cursor-pointer bg-transparent" id="menu-toggle">
+                    <span class="block w-6 h-1 bg-white mb-1"></span>
+                    <span class="block w-6 h-1 bg-white mb-1"></span>
+                    <span class="block w-6 h-1 bg-white"></span>
+                </div>
+    
+                <!-- Menú Horizontal (solo en pantallas grandes) -->
+                <div class="hidden md:flex w-full justify-end bg-transparent">
+                    <ul class="inline-flex space-x-4 text-white">
+                        <li><a href="#hero" class="menu-item text-xl">HOME</a></li>
+                        <li><a href="#about" class="menu-item text-xl">ABOUT US</a></li>
+                        <li><a href="#what" class="menu-item text-xl">WHAT WE DO</a></li>
+                        <li><a href="#services" class="menu-item text-xl">SERVICES</a></li>
+                        <li><a href="#value" class="menu-item text-xl">OUR VALUES</a></li>
+                        <li><a href="#contact" class="menu-item text-xl">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+   <!-- Menú Lateral (solo en móviles) -->
+<div id="side-menu" class="fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-white transform -translate-x-full md:hidden transition-transform duration-300 ease-in-out">
+    <div class="flex justify-end p-4">
+        <!-- Botón de cerrar el menú lateral -->
+        <button id="close-menu" class="text-white text-2xl">&times;</button>
+    </div>
+    <ul class="flex flex-col items-center space-y-6 mt-20">
+        <li><a href="#hero" class="text-white menu-item text-xl">HOME</a></li>
+        <li><a href="#about" class="text-white menu-item text-xl">ABOUT US</a></li>
+        <li><a href="#what" class="text-white menu-item text-xl">WHAT WE DO</a></li>
+        <li><a href="#services" class="text-white menu-item text-xl">SERVICES</a></li>
+        <li><a href="#value" class="text-white menu-item text-xl">OUR VALUES</a></li>
+        <li><a href="#contact" class="text-white menu-item text-xl">CONTACT</a></li>
+    </ul>
+</div>
+
+    
+
+    <main>
+        <section id="hero" class="relative w-full h-screen bg-cover bg-center">
+            <div
+                class="relative z-10 flex flex-col md:flex-row items-center justify-center w-full h-full text-center text-white">
+                <!-- Columna 1: Logo -->
+                <div class="flex flex-col items-center md:w-1/2 px-4 mb-6 md:mb-0 mt-20 md:mt-0">
+                    <img src="src/images/LOGO_01INFINITO_blanco.png" alt="01Infinito" class="w-1/2 md:w-2/3">
+                </div>
+
+                <!-- Columna 2: Subtítulos y Botón -->
+                <div class="flex flex-col items-center md:w-1/2 px-4">
+                    <h1 class="text-4xl md:text-5xl font-bold mt-6 mb-6">From Zero to One, From One to Infinity -
+                        Shaping the Future with Technology.</h1>
+                    <p class="text-2xl md:text-3xl mb-4 text-center ">
+                        01Infinito builds cutting-edge digital experiences, bridging innovation and business impact. We
+                        provide consulting, development, and technology solutions tailored to drive growth.
+                    </p>
+                    <h2 class="text-xl md:text-3xl mb-4 text-center md:text-center text-orange-600 mt-6"><strong>How We
+                            Deliver Value</strong></h2>
+                    <ul class="text-xl md:text-2xl mb-4 text-center mt-6">
+                        <li><strong class="text-orange-600">Strategic consulting:</strong> Helping businesses scale with
+                            the right tech</li>
+                        <li><strong class="text-orange-600">Tailored solutions:</strong> AI, cybersecurity, cloud,
+                            blockchain, and more.</li>
+                        <li><strong class="text-orange-600">Expert team: </strong>Specialists in emerging and enterprise
+                            technologies.</li>
+                    </ul>
+                    <a href="#servicios"
+                        class="mt-6 inline-block py-3 px-8 rounded-lg font-bold text-white bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300 shadow-lg">
+                        BOOK A CALL TO EXPLORE HOW WE CAN ELEVATE YOUR BUSINESS.
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Us -->
+        <section id="about" class="relative w-full  bg-cover bg-center text-white mt-6">
+            <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+                <!-- Columna 1: Descripción -->
+                <div class="text-center mb-12 flex flex-col justify-center items-center">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">ABOUT <strong class="text-orange-600">WE
+                            US</strong></h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+                        We create disruptive solutions for startups and corporations. Our experience spans fintech,
+                        blockchain, and cybersecurity, including digital payment platforms in Latin America and
+                        global telecom security audits.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Por qué elegirnos -->
+                <div class="text-center">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">WHY CHOOSE <strong
+                            class="text-orange-600">
+                            US</strong></h2>
+
+                    <!-- Tarjetas en una sola columna -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
+                            <div class="flex items-center justify-center mb-4">
+                                <i class="fas fa-cogs text-orange-500 text-3xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Agile & adaptive</h4>
+                            <p class="text-lg">Adaptable to market shifts, ensuring efficient and responsive
+                                solutions for clients.</p>
+                        </div>
+
+                        <div
+                            class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
+                            <div class="flex items-center justify-center mb-4">
+                                <i class="fas fa-robot text-orange-500 text-3xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Expertise in AI & Blockchain</h4>
+                            <p class="text-lg">Delivering solutions in AI, blockchain, and cloud technologies,
+                                powered by proven expertise.</p>
+                        </div>
+
+                        <div
+                            class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
+                            <div class="flex items-center justify-center mb-4">
+                                <i class="fas fa-cloud text-orange-500 text-3xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Efficient Methodologies</h4>
+                            <p class="text-lg">Using agile and scalable methodologies to ensure fast, high-quality
+                                solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- What We Do -->
+        <section id="what" class="relative w-full bg-cover bg-center">
+            <div class="container mx-auto px-4 h-full flex flex-col justify-center text-center">
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">WHAT <strong class="text-white">WE
+                        DO</strong></h2>
+
+                <!-- Grid de categorías -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+                    <!-- Tokenization Real Assets -->
+                    <div class="flex items-center">
+                        <i class="fas fa-wallet text-6xl text-orange-500 mr-6"></i> <!-- Icono de tokenization -->
+                        <h3 class="text-3xl font-bold text-white">Tokenization Real Assets</h3>
+                    </div>
+
+                    <!-- NFT Strategy and Execution -->
+                    <div class="flex items-center">
+                        <i class="fas fa-paint-brush text-6xl text-orange-500 mr-6"></i> <!-- Icono de NFT -->
+                        <h3 class="text-3xl font-bold text-white">NFT Strategy and Execution</h3>
+                    </div>
+
+                    <!-- Gaming, Metaverse, and Web3 -->
+                    <div class="flex items-center">
+                        <i class="fas fa-gamepad text-6xl text-orange-500 mr-6"></i> <!-- Icono de gaming -->
+                        <h3 class="text-3xl font-bold text-white">Gaming, Metaverse and Web3</h3>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-6xl text-orange-500 mr-6"></i> <!-- Icono de AI -->
+                        <h3 class="text-3xl font-bold text-white">AI</h3>
+                    </div>
+
+                    <!-- IoT and Massive Data Ingestion -->
+                    <div class="flex items-center">
+                        <i class="fas fa-network-wired text-6xl text-orange-500 mr-6"></i> <!-- Icono de IoT -->
+                        <h3 class="text-3xl font-bold text-white">IoT and Massive Data Ingestion</h3>
+                    </div>
+
+                    <!-- Networking & Cloud Infrastructure -->
+                    <div class="flex items-center">
+                        <i class="fas fa-cloud text-6xl text-orange-500 mr-6"></i> <!-- Icono de networking -->
+                        <h3 class="text-3xl font-bold text-white">Networking & Cloud Infrastructure</h3>
+                    </div>
+
+                    <!-- Cybersecurity -->
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-6xl text-orange-500 mr-6"></i> <!-- Icono de seguridad -->
+                        <h3 class="text-3xl font-bold text-white">Cybersecurity</h3>
+                    </div>
+
+                    <!-- Fintech Infrastructure -->
+                    <div class="flex items-center">
+                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-6"></i> <!-- Icono de fintech -->
+                        <h3 class="text-3xl font-bold text-white">Fintech Infrastructure</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services -->
+        <section id="services" class="relative w-full text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <!-- Título de la sección -->
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">OUR <strong
+                        class="text-white">SERVICES</strong></h2>
+
+                <!-- Descripción general -->
+                <p class="text-2xl md:text-3xl mb-16 max-w-3xl mx-auto text-white">
+                    We provide a wide range of innovative services to help your business grow, leveraging cutting-edge
+                    technologies and proven strategies.
+                </p>
+
+                <!-- Grid de servicios con Tailwind grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+
+                    <!-- R&D & Innovation -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-lightbulb text-6xl text-orange-500 mr-6"></i> <!-- Icono de innovación -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">R&D & Innovation</h3>
+                            <p class="text-lg text-white">We develop breakthrough technology, from AI-powered analytics
+                                to blockchain tokenization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Technology Consulting -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-cogs text-6xl text-orange-500 mr-6"></i> <!-- Icono de tecnología -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Technology Consulting</h3>
+                            <p class="text-lg text-white">Providing expert advice on technology strategy and digital
+                                transformation.</p>
+                        </div>
+                    </div>
+
+                    <!-- CTO & CISO as a Service -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-shield-alt text-6xl text-orange-500 mr-6"></i> <!-- Icono de CISO -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">CTO & CISO as a Service</h3>
+                            <p class="text-lg text-white">Infrastructure management: DevOps, security, cloud.</p>
+                        </div>
+                    </div>
+
+                    <!-- Software & Hardware Development -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-laptop-code text-6xl text-orange-500 mr-6"></i> <!-- Icono de desarrollo -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Software & Hardware Development</h3>
+                            <p class="text-lg text-white">Developing custom software and hardware solutions to meet your
+                                needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- AI & Cybersecurity -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-brain text-6xl text-orange-500 mr-6"></i> <!-- Icono de AI -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">AI & Cybersecurity</h3>
+                            <p class="text-lg text-white">AI for finance, healthcare, and security. Risk assessments and
+                                regulatory compliance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Risk Assessments -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-shield-virus text-6xl text-orange-500 mr-6"></i> <!-- Icono de riesgos -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Risk Assessments & Compliance</h3>
+                            <p class="text-lg text-white">Helping businesses ensure compliance with regulations and
+                                mitigate risks effectively.</p>
+                        </div>
+                    </div>
+
+                    <!-- Brand & Digital Strategy -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-chart-line text-6xl text-orange-500 mr-6"></i> <!-- Icono de estrategia -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Brand & Digital Strategy</h3>
+                            <p class="text-lg text-white">Brand positioning & content creation. Digital marketing &
+                                social media strategies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Fintech Infrastructure -->
+                    <div
+                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-6"></i> <!-- Icono de fintech -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Fintech Infrastructure</h3>
+                            <p class="text-lg text-white">Providing secure and scalable infrastructure for the fintech
+                                industry.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Values -->
+        <section id="value" class="relative w-full h-screen bg-cover bg-center">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">OUR <strong
+                        class="text-white">VALUES</strong></h2>
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+                        <div class="values text-center">
+                            <img src="src/images/value-1.png" alt="" class="mx-auto mb-4">
+                            <p class="text-2xl font-semibold text-white">DECENTRALIZATION</p>
+                        </div>
+                        <div class="values text-center">
+                            <img src="src/images/value-2.png" alt="" class="mx-auto mb-4">
+                            <p class="text-2xl font-semibold text-white">TRANSPARENCY</p>
+                        </div>
+                        <div class="values text-center">
+                            <img src="src/images/value-3.png" alt="" class="mx-auto mb-4">
+                            <p class="text-2xl font-semibold text-white">INCLUSIVENESS</p>
+                        </div>
+                        <div class="values text-center">
+                            <img src="src/images/value-4.png" alt="" class="mx-auto mb-4">
+                            <p class="text-2xl font-semibold text-white">CYBERSECURITY COMPLIANCE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 text-center">
+                <!-- Título de la sección -->
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20">SUCCESS <strong class="text-white">STORIES</strong></h2>
+
+                <!-- Descripción -->
+                <p class="text-2xl md:text-3xl mb-12 max-w-3xl mx-auto text-white">
+                    We’ve helped 20+ companies across 10 countries innovate in fintech, AI, and blockchain.
+                </p>
+
+                <!-- Lista de historias de éxito -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">Scalable Enterprise Infrastructure</h3>
+                        <p class="text-lg text-white">Helping businesses build infrastructure that grows with their
+                            needs.</p>
+                    </div>
+
+                    <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">Tokenized Financial Ecosystems</h3>
+                        <p class="text-lg text-white">Creating secure, efficient, and blockchain-enabled financial
+                            systems.</p>
+                    </div>
+
+                    <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">AI-Powered Automation in Industries</h3>
+                        <p class="text-lg text-white">Using AI to streamline processes and enhance operational
+                            efficiency.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Contact Us -->
+        <section id="contact" class="relative w-full h-screen bg-cover bg-center text-white">
+            <div class="container mx-auto max-w-[70%] px-4 text-center mt-10">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20"><strong class="text-white">GET IN </strong>CONTACT</h2>
+
+                <p class="mt-4 text-xl md:text-3xl" data-aos="fade-right">Conctact Data</p>
+                <br>
+                <form id="contact-form" class="mt-10 space-y-6 max-w-lg mx-auto">
+                    <input type="text" placeholder="Name" name="from_name"
+                        class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
+                    <input type="email" placeholder="E-mail" name="reply_to"
+                        class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
+                    <input type="tel" placeholder="Phone Number" name="cellphone"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>    
+                    <textarea placeholder="Message" name="message"
+                        class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required></textarea>
+                    <button type="submit"
+                        class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">
+                        Schedule a consultation and start building your future with technology.</button>
+                </form>
+    
+                <div class="mt-10 text-lg">
+                    <p><i class="fas fa-envelope text-white-400 text-xl">  </i>    Correo: <a href="mailto:contacto@01infinito.com"
+                        class="text-blue-400 hover:underline">contacto@01infinito.com</a></p>
+                    <p><i class="fas fa-mobile text-blue-400 text-xl">  </i>    Teléfono: +54 11 4456 7890</p>
+                    <p><i class="fas fa-globe-americas text-green-400 text-xl">  </i>    Sitio Web: <a href="https://01infinito.com" class="text-blue-400 hover:underline">www.01infinito.com</a></p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
+
+</body>
+
+</html>
