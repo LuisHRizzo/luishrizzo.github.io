@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
 </head>
 
-<body class="bg-black " >
+<body class="bg-black ">
     <!-- dejo esta clase aca: class="bg-gradient-to-b from-[#401acd] from-10% via-[#351465] via-50% to-[#13265a] to-90% " -->
     <div id="particles-js"></div>
 
@@ -21,21 +21,21 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between">
                 <!-- Columna del logo -->
-                <div class="w-2/3 md:w-1/4 lg:w-1/3">
+                <!-- <div class="w-2/3 md:w-1/4 lg:w-1/3">
                     <div class="logo">
                         <a href="index.html">
                             <img src="src/images/logo.png" class="transition-all" alt="Cryptcon">
                         </a>
                     </div>
-                </div>
-    
+                </div> -->
+
                 <!-- Menú Hamburguesa (solo en móviles) -->
                 <div class="md:hidden cursor-pointer bg-transparent" id="menu-toggle">
                     <span class="block w-6 h-1 bg-white mb-1"></span>
                     <span class="block w-6 h-1 bg-white mb-1"></span>
                     <span class="block w-6 h-1 bg-white"></span>
                 </div>
-    
+
                 <!-- Menú Horizontal (solo en pantallas grandes) -->
                 <div class="hidden md:flex w-full justify-end bg-transparent">
                     <ul class="inline-flex space-x-4 text-white">
@@ -50,61 +50,56 @@
             </div>
         </div>
     </header>
-    
-   <!-- Menú Lateral (solo en móviles) -->
-<div id="side-menu" class="fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-white transform -translate-x-full md:hidden transition-transform duration-300 ease-in-out">
-    <div class="flex justify-end p-4">
-        <!-- Botón de cerrar el menú lateral -->
-        <button id="close-menu" class="text-white text-2xl">&times;</button>
-    </div>
-    <ul class="flex flex-col items-center space-y-6 mt-20">
-        <li><a href="#hero" class="text-white menu-item text-xl">HOME</a></li>
-        <li><a href="#about" class="text-white menu-item text-xl">ABOUT US</a></li>
-        <li><a href="#what" class="text-white menu-item text-xl">WHAT WE DO</a></li>
-        <li><a href="#services" class="text-white menu-item text-xl">SERVICES</a></li>
-        <li><a href="#value" class="text-white menu-item text-xl">OUR VALUES</a></li>
-        <li><a href="#contact" class="text-white menu-item text-xl">CONTACT</a></li>
-    </ul>
-</div>
 
-    
+    <!-- Menú Lateral (solo en móviles) -->
+    <div id="side-menu"
+        class="fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-white transform -translate-x-full md:hidden transition-transform duration-300 ease-in-out">
+        <div class="flex justify-end p-4">
+            <!-- Botón de cerrar el menú lateral -->
+            <button id="close-menu" class="text-white text-2xl">&times;</button>
+        </div>
+        <ul class="flex flex-col items-center space-y-6 mt-20">
+            <li><a href="#hero" class="text-white menu-item text-xl">HOME</a></li>
+            <li><a href="#about" class="text-white menu-item text-xl">ABOUT US</a></li>
+            <li><a href="#what" class="text-white menu-item text-xl">WHAT WE DO</a></li>
+            <li><a href="#services" class="text-white menu-item text-xl">SERVICES</a></li>
+            <li><a href="#value" class="text-white menu-item text-xl">OUR VALUES</a></li>
+            <li><a href="#contact" class="text-white menu-item text-xl">CONTACT</a></li>
+        </ul>
+    </div>
+
+
 
     <main>
-        <section id="hero" class="relative w-full min-h-screen bg-cover bg-center flex flex-col md:grid md:grid-cols-2 text-white">
-            <!-- Columna 1: Logo -->
-            <div class="flex flex-col items-center justify-center p-4">
-              <img src="src/images/LOGO_01INFINITO_blanco.png" alt="01Infinito" class="w-2/3 md:w-1/2">
+        <section id="hero"
+            class="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white">
+
+            <div class="flex flex-col items-center justify-center text-center p-4 max-w-5xl">
+                <img src="src/images/LOGO_01INFINITO_blanco.png" style="height: 50%; width: 50%; margin-bottom: 4rem;"
+                    alt="01Infinito">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                    From Zero to One, From One to Infinity
+                </h1>
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                    Shaping the Future with Technology
+                </h1>
+                <br>
+                <br>
+                <p class="text-base md:text-xl mb-4">
+                    01Infinito builds cutting-edge digital experiences, bridging innovation and business impact. We
+                    provide consulting, development, and technology solutions tailored to drive growth.
+                </p>
+                
             </div>
-          
-            <!-- Columna 2: Subtítulos y Botón -->
-            <div class="flex flex-col items-center justify-center text-center p-4">
-              <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
-                From Zero to One, From One to Infinity - Shaping the Future with Technology.
-              </h1>
-              <p class="text-base md:text-xl mb-4">
-                01Infinito builds cutting-edge digital experiences, bridging innovation and business impact. We provide consulting, development, and technology solutions tailored to drive growth.
-              </p>
-              <h2 class="text-lg md:text-2xl text-orange-600 mb-4 font-semibold">
-                How We Deliver Value
-              </h2>
-              <ul class="space-y-2 text-sm md:text-lg">
-                <li><strong class="text-orange-600">Strategic consulting:</strong> Helping businesses scale with the right tech</li>
-                <li><strong class="text-orange-600">Tailored solutions:</strong> AI, cybersecurity, cloud, blockchain, and more.</li>
-                <li><strong class="text-orange-600">Expert team:</strong> Specialists in emerging and enterprise technologies.</li>
-              </ul>
-              <a href="#services"
-                class="mt-6 py-3 px-8 bg-orange-600 text-white rounded-lg font-bold hover:bg-orange-700 hover:scale-105 transition-all shadow-lg">
-                BOOK A CALL TO EXPLORE HOW WE CAN ELEVATE YOUR BUSINESS.
-              </a>
-            </div>
-          </section>
-          
-          
-        
+        </section>
+
+
+
 
 
         <!-- About Us -->
-        <section id="about" class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white mt-6">
+        <section id="about"
+            class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white mt-6">
             <div class="container mx-auto px-4 h-full flex flex-col justify-center">
                 <div class="text-center mb-12 flex flex-col justify-center items-center">
                     <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">ABOUT <strong class="text-orange-600">
@@ -160,62 +155,71 @@
 
         <!-- What We Do -->
         <section id="what" class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center">
-            <div class="container mx-auto px-4 h-full flex flex-col justify-center text-center">
-                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">WHAT <strong class="text-white">WE
-                        DO</strong></h2>
+            <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+                <div class="flex justify-center mb-12">
+                    <h2 class="text-5xl md:text-6xl font-bold text-orange-600">
+                        WHAT <strong class="text-white">WE DO</strong>
+                    </h2>
+                </div>
+                <br>
 
                 <!-- Grid de categorías -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10">
                     <!-- Tokenization Real Assets -->
-                    <div class="flex items-center">
-                        <i class="fas fa-wallet text-6xl text-orange-500 mr-6"></i> <!-- Icono de tokenization -->
-                        <h3 class="text-3xl font-bold text-white">Tokenization Real Assets</h3>
+                    <div class="flex items-center justify-center">
+                        <h3 class="text-3xl font-bold text-white text-right flex-1">Tokenization Real Assets</h3>
+                        <i class="fas fa-wallet text-6xl text-orange-500 ml-4"></i>
                     </div>
 
                     <!-- NFT Strategy and Execution -->
-                    <div class="flex items-center">
-                        <i class="fas fa-paint-brush text-6xl text-orange-500 mr-6"></i> <!-- Icono de NFT -->
-                        <h3 class="text-3xl font-bold text-white">NFT Strategy and Execution</h3>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-paint-brush text-6xl text-orange-500 mr-4"></i>
+                        <h3 class="text-3xl font-bold text-white text-left flex-1">NFT Strategy and Execution</h3>
                     </div>
 
                     <!-- Gaming, Metaverse, and Web3 -->
-                    <div class="flex items-center">
-                        <i class="fas fa-gamepad text-6xl text-orange-500 mr-6"></i> <!-- Icono de gaming -->
-                        <h3 class="text-3xl font-bold text-white">Gaming, Metaverse and Web3</h3>
+                    <div class="flex items-center justify-center">
+                        <h3 class="text-3xl font-bold text-white text-right flex-1">Gaming, Metaverse and Web3</h3>
+                        <i class="fas fa-gamepad text-6xl text-orange-500 ml-4"></i>
                     </div>
 
                     <!-- AI -->
-                    <div class="flex items-center">
-                        <i class="fas fa-brain text-6xl text-orange-500 mr-6"></i> <!-- Icono de AI -->
-                        <h3 class="text-3xl font-bold text-white">AI</h3>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-brain text-6xl text-orange-500 mr-4"></i>
+                        <h3 class="text-3xl font-bold text-white text-left flex-1">AI, LLMs & Machine Vision</h3>
                     </div>
 
                     <!-- IoT and Massive Data Ingestion -->
-                    <div class="flex items-center">
-                        <i class="fas fa-network-wired text-6xl text-orange-500 mr-6"></i> <!-- Icono de IoT -->
-                        <h3 class="text-3xl font-bold text-white">IoT and Massive Data Ingestion</h3>
+                    <div class="flex items-center justify-center">
+                        <h3 class="text-3xl font-bold text-white text-right flex-1">IoT and Massive Data Ingestion</h3>
+                        <i class="fas fa-network-wired text-6xl text-orange-500 ml-4"></i>
                     </div>
 
                     <!-- Networking & Cloud Infrastructure -->
-                    <div class="flex items-center">
-                        <i class="fas fa-cloud text-6xl text-orange-500 mr-6"></i> <!-- Icono de networking -->
-                        <h3 class="text-3xl font-bold text-white">Networking & Cloud Infrastructure</h3>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-cloud text-6xl text-orange-500 mr-4"></i>
+                        <h3 class="text-3xl font-bold text-white text-left flex-1">Networking & Cloud Infrastructure
+                        </h3>
                     </div>
 
                     <!-- Cybersecurity -->
-                    <div class="flex items-center">
-                        <i class="fas fa-shield-alt text-6xl text-orange-500 mr-6"></i> <!-- Icono de seguridad -->
-                        <h3 class="text-3xl font-bold text-white">Cybersecurity</h3>
+                    <div class="flex items-center justify-center">
+                        <h3 class="text-3xl font-bold text-white text-right flex-1">Cybersecurity</h3>
+                        <i class="fas fa-shield-alt text-6xl text-orange-500 ml-4"></i>
                     </div>
 
                     <!-- Fintech Infrastructure -->
-                    <div class="flex items-center">
-                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-6"></i> <!-- Icono de fintech -->
-                        <h3 class="text-3xl font-bold text-white">Fintech Infrastructure</h3>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-4"></i>
+                        <h3 class="text-3xl font-bold text-white text-left flex-1">Fintech Infrastructure</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
 
 
         <!-- Services -->
@@ -230,98 +234,86 @@
                     We provide a wide range of innovative services to help your business grow, leveraging cutting-edge
                     technologies and proven strategies.
                 </p>
-
-                <!-- Grid de servicios con Tailwind grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-
-                    <!-- R&D & Innovation -->
+                <!-- R&D & Innovation -->
+                <div
+                    class="group relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
                     <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-lightbulb text-6xl text-orange-500 mr-6"></i> <!-- Icono de innovación -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">R&D & Innovation</h3>
-                            <p class="text-lg text-white">We develop breakthrough technology, from AI-powered analytics
-                                to blockchain tokenization.</p>
-                        </div>
+                        class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 group-hover:opacity-30 transition duration-500">
                     </div>
-
-                    <!-- Technology Consulting -->
+                    <h3 class="text-3xl font-bold z-10 relative">R&D & Innovation</h3>
+                    <p class="mt-4 z-10 relative">We develop breakthrough technology, from AI-powered analytics to
+                        blockchain tokenization.</p>
                     <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-cogs text-6xl text-orange-500 mr-6"></i> <!-- Icono de tecnología -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Technology Consulting</h3>
-                            <p class="text-lg text-white">Providing expert advice on technology strategy and digital
-                                transformation.</p>
-                        </div>
+                        class="absolute top-0 left-0 w-2 h-full bg-orange-600 group-hover:w-full transition-all duration-500">
                     </div>
-
-                    <!-- CTO & CISO as a Service -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-shield-alt text-6xl text-orange-500 mr-6"></i> <!-- Icono de CISO -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">CTO & CISO as a Service</h3>
-                            <p class="text-lg text-white">Infrastructure management: DevOps, security, cloud.</p>
-                        </div>
-                    </div>
-
-                    <!-- Software & Hardware Development -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-laptop-code text-6xl text-orange-500 mr-6"></i> <!-- Icono de desarrollo -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Software & Hardware Development</h3>
-                            <p class="text-lg text-white">Developing custom software and hardware solutions to meet your
-                                needs.</p>
-                        </div>
-                    </div>
-
-                    <!-- AI & Cybersecurity -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-brain text-6xl text-orange-500 mr-6"></i> <!-- Icono de AI -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">AI & Cybersecurity</h3>
-                            <p class="text-lg text-white">AI for finance, healthcare, and security. Risk assessments and
-                                regulatory compliance.</p>
-                        </div>
-                    </div>
-
-                    <!-- Risk Assessments -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-shield-virus text-6xl text-orange-500 mr-6"></i> <!-- Icono de riesgos -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Risk Assessments & Compliance</h3>
-                            <p class="text-lg text-white">Helping businesses ensure compliance with regulations and
-                                mitigate risks effectively.</p>
-                        </div>
-                    </div>
-
-                    <!-- Brand & Digital Strategy -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-chart-line text-6xl text-orange-500 mr-6"></i> <!-- Icono de estrategia -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Brand & Digital Strategy</h3>
-                            <p class="text-lg text-white">Brand positioning & content creation. Digital marketing &
-                                social media strategies.</p>
-                        </div>
-                    </div>
-
-                    <!-- Fintech Infrastructure -->
-                    <div
-                        class="flex items-center bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-6"></i> <!-- Icono de fintech -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Fintech Infrastructure</h3>
-                            <p class="text-lg text-white">Providing secure and scalable infrastructure for the fintech
-                                industry.</p>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Technology Consulting -->
+                <div class="group relative bg-gray-800 p-6 rounded-lg shadow-lg mb-10">
+                    <div class="transform transition-transform group-hover:rotate-3 group-hover:scale-105 duration-300">
+                        <h3 class="text-3xl font-bold">Technology Consulting</h3>
+                        <p class="mt-4">CTO & CISO as a Service<br>Infrastructure management: DevOps, security,
+                            cloud<br>Software & hardware development</p>
+                    </div>
+                </div>
+
+                <!-- AI & Cybersecurity -->
+                <div
+                    class="group relative bg-gray-800 p-6 rounded-lg shadow-lg mb-10 overflow-hidden transition-all duration-300 hover:scale-105">
+                    <!-- Fondo dinámico -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-300">
+                    </div>
+
+                    <!-- Contenido principal -->
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold text-white">AI & Cybersecurity</h3>
+                        <p class="mt-4 text-gray-300">
+                            AI for finance, healthcare, and security.<br>
+                            Risk assessments and regulatory compliance.
+                        </p>
+                    </div>
+
+                    <!-- Icono central (solo visible en hover) -->
+                    <div
+                        class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-brain text-8xl text-orange-500"></i>
+                    </div>
+                </div>
+
+
+                <!-- Brand & Digital Strategy -->
+                <div class="relative w-full py-16 bg-black text-white">
+                    <h3 class="text-4xl font-bold text-center mb-12">Brand & Digital Strategy</h3>
+
+                    <!-- Grid de Tarjetas -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center px-4">
+                        <!-- Tarjeta 1 -->
+                        <div
+                            class="bg-orange-600 p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300 flex flex-col items-center text-center">
+                            <h4 class="text-2xl font-semibold mb-4">Brand Positioning</h4>
+                            <p>Helping you define a clear and impactful brand.</p>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div
+                            class="bg-purple-600 p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300 flex flex-col items-center text-center">
+                            <h4 class="text-2xl font-semibold mb-4">Content Creation</h4>
+                            <p>Producing engaging and professional digital content.</p>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div
+                            class="bg-blue-600 p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300 flex flex-col items-center text-center">
+                            <h4 class="text-2xl font-semibold mb-4">Digital Marketing</h4>
+                            <p>Using the latest tools to grow your audience online.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
             </div>
         </section>
 
@@ -352,9 +344,25 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto px-4 text-center">
+            <div class="container mx-auto px-4 text-center mt-20">
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">HOW WE DELIVER <strong
+                    class="text-orange-600">VALUE</strong></h2>
+              <ul class="space-y-2 text-xl md:text-3xl text-white">
+                <li><strong class="text-orange-600">Strategic consulting:</strong> Helping businesses scale with the right tech</li>
+                <li><strong class="text-orange-600">Tailored solutions:</strong> AI, cybersecurity, cloud, blockchain, and more.</li>
+                <li><strong class="text-orange-600">Expert team:</strong> Specialists in emerging and enterprise technologies.</li>
+              </ul>
+              <div class="container mt-20">
+                  <a href="#contact"
+                    class="mt-20 py-3 px-8 bg-orange-600 text-white rounded-lg font-bold hover:bg-orange-700 hover:scale-105 transition-all shadow-lg">
+                    BOOK A CALL TO EXPLORE HOW WE CAN ELEVATE YOUR BUSINESS.
+                  </a>
+              </div>
+            </div>
+            <div class="container mx-auto px-4 text-center mt-12">
                 <!-- Título de la sección -->
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20">SUCCESS <strong class="text-white">STORIES</strong></h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20">SUCCESS <strong
+                        class="text-white">STORIES</strong></h2>
 
                 <!-- Descripción -->
                 <p class="text-2xl md:text-3xl mb-12 max-w-3xl mx-auto text-white">
@@ -385,9 +393,11 @@
 
         </section>
         <!-- Contact Us -->
-        <section id="contact" class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white">
+        <section id="contact"
+            class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white">
             <div class="container mx-auto max-w-[70%] px-4 text-center mt-10">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20"><strong class="text-white">GET IN </strong>CONTACT</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20"><strong class="text-white">GET IN
+                    </strong>CONTACT</h2>
 
                 <p class="mt-4 text-xl md:text-3xl" data-aos="fade-right">Conctact Data</p>
                 <br>
@@ -397,20 +407,23 @@
                     <input type="email" placeholder="E-mail" name="reply_to"
                         class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
                     <input type="tel" placeholder="Phone Number" name="cellphone"
-                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>    
+                        class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
                     <textarea placeholder="Message" name="message"
                         class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required></textarea>
                     <button type="submit"
                         class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">
                         Schedule a consultation and start building your future with technology.</button>
                 </form>
-    
+
                 <div class="mt-10 text-lg">
-                    <p><i class="fas fa-envelope text-white-400 text-xl">  </i>    Correo: <a href="mailto:contacto@01infinito.com"
-                        class="text-blue-400 hover:underline">contacto@01infinito.com</a></p>
-                    <p><i class="fas fa-mobile text-blue-400 text-xl">  </i>    Teléfono: +54 11 4456 7890</p>
-                    <p><i class="fas fa-globe-americas text-green-400 text-xl">  </i>    Sitio Web: <a href="https://01infinito.com" class="text-blue-400 hover:underline">www.01infinito.com</a></p>
-                    </div>
+                    <p><i class="fas fa-envelope text-white-400 text-xl"> </i> Correo: <a
+                            href="mailto:contacto@01infinito.com"
+                            class="text-blue-400 hover:underline">contacto@01infinito.com</a></p>
+                    <p><i class="fas fa-mobile text-blue-400 text-xl"> </i> Teléfono: +54 11 4456 7890</p>
+                    <p><i class="fas fa-globe-americas text-green-400 text-xl"> </i> Sitio Web: <a
+                            href="https://01infinito.com" class="text-blue-400 hover:underline">www.01infinito.com</a>
+                    </p>
+                </div>
             </div>
         </section>
 

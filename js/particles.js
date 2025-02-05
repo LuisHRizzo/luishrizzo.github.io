@@ -14,7 +14,7 @@ tsParticles.load("particles-js", {
             type: "circle", // Forma de las partículas
         },
         opacity: {
-            value: 0.2, // Opacidad de las partículas
+            value: 0.5, // Opacidad de las partículas
             random: true,
             anim: {
                 enable: true,
@@ -24,7 +24,7 @@ tsParticles.load("particles-js", {
             }
         },
         size: {
-            value: 2, // Tamaño de las partículas
+            value: 5, // Tamaño de las partículas
             random: true,
             anim: {
                 enable: true,
@@ -36,7 +36,7 @@ tsParticles.load("particles-js", {
         links: {
             enable: true, // Habilita los enlaces entre partículas
             distance: 150,
-            color: "#ffffff", // Color de los enlaces
+            color: "#ff5733", // Color de los enlaces
             opacity: 0.4,
             width: 1
         },
