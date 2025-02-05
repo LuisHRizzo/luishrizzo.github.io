@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at center, rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
     font-family: 'Oswald', sans-serif;
     
   }
@@ -64,10 +63,6 @@ body {
   }
 }
 
-
-  .bg-gradient-to-b {
-    background: linear-gradient(to bottom, #401acd 0%, #351465 10%, #5f0934 30%,#351465 40%,#13265a 60%, #351465 80%, #943765 90%, #1a3378 100%);
-  }
   
   /* Estilo de los puntos brillantes y líneas */
   @keyframes shimmer {
