@@ -18,7 +18,7 @@ body {
   }
 
   section {
-    min-height: 100vh;
+    min-height: 80vh;
 }
  .flex{
   flex-wrap: wrap;
@@ -186,21 +186,6 @@ header {
   }
 
 
-  /* Fondo del header */
-header {
-    position: relative;
-    height: 200px;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparente para que las partículas se vean */
-}
-
-#value {
-  padding-bottom: 50px; /* Espacio interno específico para la sección 'Values' */
-}
-
-#contact {
-  margin-top: 100px; /* Espacio adicional antes de la sección 'Contact' */
-  padding-top: 50px;
-}
 
 /* Contenedor de las partículas */
 .particles-container {
