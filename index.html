@@ -9,7 +9,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></script>
@@ -79,10 +82,10 @@
             <div class="flex flex-col items-center justify-center text-center p-4 max-w-5xl">
                 <img src="src/images/LOGO_01INFINITO_blanco.png" style="height: 50%; width: 50%; margin-bottom: 4rem;"
                     alt="01Infinito">
-                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight gradient-text">
                     From Zero to One, From One to Infinity
                 </h1>
-                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight gradient-text">
                     Shaping the Future with Technology
                 </h1>
                 <br>
@@ -91,7 +94,7 @@
                     01Infinito builds cutting-edge digital experiences, bridging innovation and business impact. We
                     provide consulting, development, and technology solutions tailored to drive growth.
                 </p>
-                
+
             </div>
         </section>
 
@@ -104,8 +107,7 @@
             class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white mt-6">
             <div class="container mx-auto px-4 h-full flex flex-col justify-center">
                 <div class="text-center mb-12 flex flex-col justify-center items-center">
-                    <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">ABOUT <strong class="text-orange-600">
-                            US</strong></h2>
+                    <h2 class="text-5xl md:text-6xl font-bold mb-12 gradient-text">ABOUT <strong class="text-white">US</strong></h2>
                     <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
                         We create disruptive solutions for startups and corporations. Our experience spans fintech,
                         blockchain, and cybersecurity, including digital payment platforms in Latin America and
@@ -114,16 +116,26 @@
                 </div>
 
                 <div class="text-center">
-                    <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">WHY CHOOSE <strong
-                            class="text-orange-600">
-                            US</strong></h2>
+                    <h2 class="text-5xl md:text-6xl font-bold mb-12 gradient-text">WHY CHOOSE <strong class="text-white">US</strong></h2>
 
                     <!-- Tarjetas en una sola columna -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div
                             class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
                             <div class="flex items-center justify-center mb-4">
-                                <i class="fas fa-cogs text-orange-500 text-3xl"></i>
+                                <svg class="gradient-icon w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="url(#gradient-stroke)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <defs>
+                                        <linearGradient id="gradient-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#A53BA8" />
+                                            <stop offset="100%" stop-color="#3F6FA3" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
                             </div>
                             <h4 class="text-xl font-bold mb-2">Agile & adaptive</h4>
                             <p class="text-lg">Adaptable to market shifts, ensuring efficient and responsive
@@ -133,7 +145,7 @@
                         <div
                             class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
                             <div class="flex items-center justify-center mb-4">
-                                <i class="fas fa-robot text-orange-500 text-3xl"></i>
+                                <svg class="gradient-icon w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
                             </div>
                             <h4 class="text-xl font-bold mb-2">Expertise in AI & Blockchain</h4>
                             <p class="text-lg">Delivering solutions in AI, blockchain, and cloud technologies,
@@ -143,7 +155,13 @@
                         <div
                             class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex flex-col justify-center items-center">
                             <div class="flex items-center justify-center mb-4">
-                                <i class="fas fa-cloud text-orange-500 text-3xl"></i>
+                                <svg class="gradient-icon w-12 h-12" 
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-cloudy">
+                                    <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                                    <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                                </svg>
                             </div>
                             <h4 class="text-xl font-bold mb-2">Efficient Methodologies</h4>
                             <p class="text-lg">Using agile and scalable methodologies to ensure fast, high-quality
@@ -159,7 +177,7 @@
         <section id="what" class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center">
             <div class="container mx-auto px-4 h-full flex flex-col justify-center">
                 <div class="flex justify-center mb-12">
-                    <h2 class="text-5xl md:text-6xl font-bold text-orange-600">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-12 gradient-text">
                         WHAT <strong class="text-white">WE DO</strong>
                     </h2>
                 </div>
@@ -168,38 +186,44 @@
                 <!-- Grid de categorías -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10">
                     <!-- Tokenization Real Assets -->
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center md:justify-end">
                         <h3 class="text-3xl font-bold text-white text-right flex-1">Tokenization Real Assets</h3>
-                        <i class="fas fa-wallet text-6xl text-orange-500 ml-4"></i>
+                        <svg class="gradient-icon w-20 h-20" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-wallet">
+                            <path
+                                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                            <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+                        </svg>
                     </div>
 
                     <!-- NFT Strategy and Execution -->
-                    <div class="flex items-center justify-center">
-                        <i class="fas fa-paint-brush text-6xl text-orange-500 mr-4"></i>
+                    <div class="flex items-center  justify-center md:justify-end">
+                        <svg class="gradient-icon w-20 h-20" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>
                         <h3 class="text-3xl font-bold text-white text-left flex-1">NFT Strategy and Execution</h3>
                     </div>
 
                     <!-- Gaming, Metaverse, and Web3 -->
                     <div class="flex items-center justify-center">
                         <h3 class="text-3xl font-bold text-white text-right flex-1">Gaming, Metaverse and Web3</h3>
-                        <i class="fas fa-gamepad text-6xl text-orange-500 ml-4"></i>
+                        <i class="fas fa-gamepad text-6xl gradient-text ml-4"></i>
                     </div>
 
                     <!-- AI -->
                     <div class="flex items-center justify-center">
-                        <i class="fas fa-brain text-6xl text-orange-500 mr-4"></i>
+                        <svg class="gradient-icon w-20 h-20"  xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-circuit"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></svg>
                         <h3 class="text-3xl font-bold text-white text-left flex-1">AI, LLMs & Machine Vision</h3>
                     </div>
 
                     <!-- IoT and Massive Data Ingestion -->
                     <div class="flex items-center justify-center">
                         <h3 class="text-3xl font-bold text-white text-right flex-1">IoT and Massive Data Ingestion</h3>
-                        <i class="fas fa-network-wired text-6xl text-orange-500 ml-4"></i>
+                        <i class="fas fa-network-wired text-6xl gradient-text ml-4"></i>
                     </div>
 
                     <!-- Networking & Cloud Infrastructure -->
                     <div class="flex items-center justify-center">
-                        <i class="fas fa-cloud text-6xl text-orange-500 mr-4"></i>
+                        <svg class="gradient-icon w-20 h-20" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-upload"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg>
                         <h3 class="text-3xl font-bold text-white text-left flex-1">Networking & Cloud Infrastructure
                         </h3>
                     </div>
@@ -207,12 +231,12 @@
                     <!-- Cybersecurity -->
                     <div class="flex items-center justify-center">
                         <h3 class="text-3xl font-bold text-white text-right flex-1">Cybersecurity</h3>
-                        <i class="fas fa-shield-alt text-6xl text-orange-500 ml-4"></i>
+                        <svg class="gradient-icon w-20 h-20" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f6fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
                     </div>
 
                     <!-- Fintech Infrastructure -->
                     <div class="flex items-center justify-center">
-                        <i class="fas fa-credit-card text-6xl text-orange-500 mr-4"></i>
+                        <i class="fas fa-credit-card text-6xl gradient-text mr-4"></i>
                         <h3 class="text-3xl font-bold text-white text-left flex-1">Fintech Infrastructure</h3>
                     </div>
                 </div>
@@ -228,24 +252,26 @@
         <section id="services" class="relative w-full min-h-screen flex items-center justify-center text-white py-20">
             <div class="container mx-auto px-4 text-center">
                 <!-- Título de la sección -->
-                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">OUR <strong
-                        class="text-white">SERVICES</strong></h2>
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 gradient-text"><strong class="text-white">OUR </strong> SERVICES</h2>
 
                 <!-- Descripción general -->
                 <p class="text-2xl md:text-3xl mb-16 max-w-3xl mx-auto text-white">
-                    In a rapidly advancing technological world, startups and established businesses need innovative solutions and solid strategies to stay competitive. That’s why we offer consulting and technological development in the following areas:
+                    In a rapidly advancing technological world, startups and established businesses need innovative
+                    solutions and solid strategies to stay competitive. That’s why we offer consulting and technological
+                    development in the following areas:
                 </p>
-                <h3 class="text-3xl md:text-4xl font-bold mb-12 text-white">
+                <h3 class="text-3xl md:text-4xl font-bold mb-12 text-orange-600">
                     Research + Development & Innovation
                 </h3>
                 <p class="text-2xl md:text-3xl mb-16 max-w-3xl mx-auto text-white">
-                    We develop breakthrough technology for businesses across all sectors. From AI to asset tokenization, we explore new technological opportunities for your business.
+                    We develop breakthrough technology for businesses across all sectors. From AI to asset tokenization,
+                    we explore new technological opportunities for your business.
                 </p>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10">
                     <!-- AI Solutions -->
                     <div
-                        class="group relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
+                        class="group relative gradient-bg p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 group-hover:opacity-30 transition duration-500">
                         </div>
@@ -262,7 +288,7 @@
                     </div>
                     <!-- Brand & Digital Strategy -->
                     <div
-                        class="group relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
+                        class="group relative gradient-bg p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 group-hover:opacity-30 transition duration-500">
                         </div>
@@ -279,12 +305,15 @@
                     </div>
                     <!-- Vulnerability Assessments & Compliance -->
                     <div
-                        class="group relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
+                        class="group relative gradient-bg p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 group-hover:opacity-30 transition duration-500">
                         </div>
                         <h3 class="text-3xl font-bold z-10 relative">Vulnerability Assessments & Compliance</h3>
-                        <p class="mt-4 z-10 relative">We assess and audit critical technologies to ensure security in financial, defense, and scientific systems, including digital payment infrastructures, secure telecommunications networks, and blockchain platforms used in high-value transactions.</p>
+                        <p class="mt-4 z-10 relative">We assess and audit critical technologies to ensure security in
+                            financial, defense, and scientific systems, including digital payment infrastructures,
+                            secure telecommunications networks, and blockchain platforms used in high-value
+                            transactions.</p>
                         <ul class="mt-4 z-10 relative">
                             <li>Regulatory and legal compliance analysis.</li>
                             <li>AI ethics and GDPR compliance.</li>
@@ -296,15 +325,18 @@
                     </div>
                     <!-- Technology Consulting & Cybersecurity -->
                     <div
-                        class="group relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
+                        class="group relative gradient-bg p-6 rounded-lg shadow-lg mb-10 overflow-hidden">
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 group-hover:opacity-30 transition duration-500">
                         </div>
                         <h3 class="text-3xl font-bold z-10 relative">Technology Consulting & Cybersecurity</h3>
                         <ul class="mt-4 z-10 relative">
-                            <li>CTO and CISO as a Service: Experienced technology leaders available based on your needs.</li>
-                            <li>Technology audits: We assess your infrastructure and processes to optimize performance and security.
-                            <li>Technology infrastructure management: DevOps, DevSecOps, networking, security operations centers, and cybersecurity solution management.</li>
+                            <li>CTO and CISO as a Service: Experienced technology leaders available based on your needs.
+                            </li>
+                            <li>Technology audits: We assess your infrastructure and processes to optimize performance
+                                and security.
+                            <li>Technology infrastructure management: DevOps, DevSecOps, networking, security operations
+                                centers, and cybersecurity solution management.</li>
                             <li>Software and hardware development: Tailored solution creation.</li>
                         </ul>
                         <div
@@ -324,7 +356,7 @@
         <!-- Our Values -->
         <section id="value" class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-5xl md:text-6xl font-bold mb-12 text-orange-600">OUR <strong
+                <h2 class="text-5xl md:text-6xl font-bold mb-12 gradient-text">OUR <strong
                         class="text-white">VALUES</strong></h2>
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
@@ -349,22 +381,25 @@
             </div>
             <div class="container mx-auto px-4 text-center mt-20">
                 <h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">HOW WE DELIVER <strong
-                    class="text-orange-600">VALUE</strong></h2>
-              <ul class="space-y-2 text-xl md:text-3xl text-white">
-                <li><strong class="text-orange-600">Strategic consulting:</strong> Helping businesses scale with the right tech</li>
-                <li><strong class="text-orange-600">Tailored solutions:</strong> AI, cybersecurity, cloud, blockchain, and more.</li>
-                <li><strong class="text-orange-600">Expert team:</strong> Specialists in emerging and enterprise technologies.</li>
-              </ul>
-              <div class="container mt-20">
-                  <a href="#contact"
-                    class="mt-20 py-3 px-8 bg-orange-600 text-white rounded-lg font-bold hover:bg-orange-700 hover:scale-105 transition-all shadow-lg">
-                    BOOK A CALL
-                  </a>
-              </div>
+                        class="gradient-text">VALUE</strong></h2>
+                <ul class="space-y-2 text-xl md:text-3xl text-white">
+                    <li><strong class="gradient-text">Strategic consulting:</strong> Helping businesses scale with the
+                        right tech</li>
+                    <li><strong class="gradient-text">Tailored solutions:</strong> AI, cybersecurity, cloud,
+                        blockchain, and more.</li>
+                    <li><strong class="gradient-text">Expert team:</strong> Specialists in emerging and enterprise
+                        technologies.</li>
+                </ul>
+                <div class="container mt-20">
+                    <a href="#contact"
+                        class="mt-20 py-3 px-8 gradient-bg text-white rounded-lg font-bold hover:bg-orange-700 hover:scale-105 transition-all shadow-lg">
+                        BOOK A CALL
+                    </a>
+                </div>
             </div>
             <div class="container mx-auto px-4 text-center mt-12">
                 <!-- Título de la sección -->
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20">SUCCESS <strong
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text mt-20">SUCCESS <strong
                         class="text-white">STORIES</strong></h2>
 
                 <!-- Descripción -->
@@ -375,19 +410,19 @@
                 <!-- Lista de historias de éxito -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">Scalable Enterprise Infrastructure</h3>
+                        <h3 class="text-2xl font-semibold gradient-text mb-4">Scalable Enterprise Infrastructure</h3>
                         <p class="text-lg text-white">Helping businesses build infrastructure that grows with their
                             needs.</p>
                     </div>
 
                     <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">Tokenized Financial Ecosystems</h3>
+                        <h3 class="text-2xl font-semibold gradient-text mb-4">Tokenized Financial Ecosystems</h3>
                         <p class="text-lg text-white">Creating secure, efficient, and blockchain-enabled financial
                             systems.</p>
                     </div>
 
                     <div class="bg-transparent p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                        <h3 class="text-2xl font-semibold text-orange-500 mb-4">AI-Powered Automation in Industries</h3>
+                        <h3 class="text-2xl font-semibold gradient-text mb-4">AI-Powered Automation in Industries</h3>
                         <p class="text-lg text-white">Using AI to streamline processes and enhance operational
                             efficiency.</p>
                     </div>
@@ -399,7 +434,7 @@
         <section id="contact"
             class="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center text-white">
             <div class="container mx-auto max-w-[70%] px-4 text-center mt-10">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-600 mt-20"><strong class="text-white">GET IN
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text mt-20"><strong class="text-white">GET IN
                     </strong>CONTACT</h2>
 
                 <p class="mt-4 text-xl md:text-3xl" data-aos="fade-right">Contact Data</p>

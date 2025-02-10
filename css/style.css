@@ -12,9 +12,12 @@ html {
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-    
-  }
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400; /* Bebas Neue solo tiene peso 400 */
+}
 
   section {
     min-height: 80vh;
@@ -28,6 +31,24 @@ body {
       flex-wrap: wrap;
   }
 }
+.gradient-bg {
+  background: linear-gradient(to right, #A53BA8, #3F6FA3);
+}
+.gradient-text {
+  background: linear-gradient(to right, #A53BA8, #3F6FA3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-icon {
+  background: linear-gradient(to right, #A53BA8, #3f6fa3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  fill: url(#gradient-fill);
+  stroke: url(#gradient-stroke);
+}
+
 /* Para las tarjetas en la sección de servicios */
 .grid .flex {
   align-items: center; /* Asegura que los iconos y textos estén alineados */
@@ -142,7 +163,10 @@ header {
   
   /* Estilos en hover */
   .menu-item:hover {
-    color: #FFA500; /* Naranja en hover */
+    background: linear-gradient(to right, #A53BA8, #3F6FA3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   
   .menu-item::after {
@@ -152,7 +176,7 @@ header {
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #FFA500; /* Naranja en subrayado */
+    background-color: #3F6FA3; /* Naranja en subrayado */
     transition: width 0.3s ease; /* Animación para el subrayado */
   }
   
