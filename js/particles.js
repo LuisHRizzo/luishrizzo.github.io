@@ -8,7 +8,7 @@ tsParticles.load("particles-js", {
             }
         },
         color: {
-            value: "#ff5733" // Color de las partículas
+            value: "#550E5B" // Color de las partículas
         },
         shape: {
             type: "circle", // Forma de las partículas
@@ -36,7 +36,7 @@ tsParticles.load("particles-js", {
         links: {
             enable: true, // Habilita los enlaces entre partículas
             distance: 150,
-            color: "#ff5733", // Color de los enlaces
+            color: "#717175", // Color de los enlaces
             opacity: 0.6,
             width: 1
         },
