@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    min-height: 80vh;
+    min-height: 100vh;
 }
  .flex{
   flex-wrap: wrap;
@@ -83,7 +83,7 @@ section {
 
   /* Ajustar márgenes en secciones móviles */
   section {
-      margin-bottom: 60px; /* Menor espacio entre secciones */
+      margin-bottom: 0px; /* Menor espacio entre secciones */
   }
 }
 
